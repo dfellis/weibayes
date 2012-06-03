@@ -8,16 +8,6 @@ A simple tool that takes 2 arguments from the command line and produces an eta v
 
 ## Usage
 
-# *weibayes* - A Weibull-Bayes Eta Calculator
-
-A simple tool that takes 2 arguments from the command line and produces an eta value for the given Weibull failure data. Does not currently support censored data.
-
-## Installation
-
-    npm install -g weibayes
-
-## Usage
-
     Usage: weibayes [options]
     
     Options:
