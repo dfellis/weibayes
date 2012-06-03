@@ -1,6 +1,6 @@
 # *weibayes* - A Weibull-Bayes Eta Calculator
 
-A simple tool that takes 2 arguments from the command line and produces an eta value for the given Weibull failure data. Does not currently support censored data.
+A simple tool that takes 2 arguments from the command line and produces an eta value for the given Weibull failure data. Censored times indicated with a '+' character at the end. See the ``test`` files for an example of the input format.
 
 ## Installation
 

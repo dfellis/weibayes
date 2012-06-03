@@ -17,11 +17,17 @@ if(!commander.beta || !commander.input) {
 	process.exit(-2);
 }
 
+var r = 0;
 console.log(Math.pow(fs.readFileSync(commander.input).toString().split('\n')
 	.map(function(val, ind, arr) {
-		return Math.pow(val, commander.beta)/arr.length;
+		if(/\+$/.test(val)) {
+			val = val.replace(/\+$/, "");
+		} else {
+			r++;
+		}
+		return Math.pow(val, commander.beta);
 	})
 	.reduce(function(reduction, val) {
-		return reduction + val;
+		return reduction + val/r;
 	}), (1/commander.beta))
 );
