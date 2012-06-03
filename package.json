@@ -1,0 +1,14 @@
+{
+	"contributors": [
+		{"name": "David Ellis", "email": "d.f.ellis@ieee.org"}
+	],
+	"name": "weibayes",
+	"version": "0.0.1",
+	"description": "Weibull-Bayes eta solver",
+	"bin": {
+		"weibayes": "./weibayes.js"
+	},
+	"dependencies": {
+		"commander": "*"
+	}
+}
